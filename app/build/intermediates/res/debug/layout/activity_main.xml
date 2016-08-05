@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am evil and want to steal the contacts from this phone." />
+
+    <Button
+        android:id="@+id/btn_steal_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="23dp"
+        android:text="Steal contacts from trusted app" />
+
+    <TextView
+        android:id="@+id/tv_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_steal_contacts"
+        android:gravity="center"
+        android:text="Contacts"
+        android:textColor="@color/holo_blue_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_show_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_lable"
+        android:descendantFocusability="blocksDescendants"></ListView>
+
+</RelativeLayout><!-- From: file:/Volumes/Data/work/EvilApp/app/src/main/res/layout/activity_main.xml -->
